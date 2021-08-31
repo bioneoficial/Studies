@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="https://i.ibb.co/gFW6jPG/logo-15x15.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript">
+			jQuery(window).load(function($){
+				atualizaRelogio();
+			});
+		</script>
+    <title>LasalleNews | Fake News</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="start">
+            <div>
+                <output class="script" id="data" style="font-family: 'Roboto', 'avant garde';color:white"></output>
+                <output class="script" id="hora" style="font-family: 'Roboto', 'avant garde'; color: white;"></output>	
+            </div>
+        </div>
+        <div id="header">
+            <a href="index.html">
+                <img id="logo" src="https://i.ibb.co/SmdN9s3/logo.png" alt="logo.png">
+            </a>
+            <form id="search" action="#">
+                <input type="search" name="sInput" id="sInput" placeholder="Faça sua busca no LasalleNews" required >
+                <button id="sButton" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div id="navbar">
+            <a href="../nav/fakenews.html">fakenews</a>
+            <a href="">noticias</a>
+            <a href="">carros</a>
+            <a href="">esporte</a>
+            <a href="">tv e famosos</a>
+            <a href="../nav/about.html">sobre</a>
+
+            <form id="login" action="#">
+                <label class="logintext" for="user">Usuário</label>
+                <input class="loginbox" type="text" maxlength="6" required>
+                <label class="logintext" for="pass">Senha</label>
+                <input class="loginbox" type="password" maxlength="8" required >
+                <button id="loginButton" type="submit">Entrar</button>
+            </form>
+        </div>
+        <div id="sidebar">
+            <span>Sites Confiáveis</span>
+            <hr>
+            <div class="headline">
+                <a href="https://www.terra.com.br/" title="https://www.terra.com.br/">
+                        <img class="headlineimage" src="https://blog.dino.com.br/wp-content/uploads/2016/07/Terra-logo-orange-bg-1024x728.png" alt="terra">
+                </a>
+            </div>
+            <div class="headline">
+                <a href="https://www.uol.com.br/" title="https://www.uol.com.br/">
+                    <img class="headlineimage" src="https://assets.b9.com.br/wp-content/uploads/2021/04/marca-positiva-rgb.jpg" alt="noticia2">
+                 </a>
+            </div>
+            <div class="headline">
+                <a href="https://www.folha.uol.com.br/" title="https://www.folha.uol.com.br/">
+                    <img class="headlineimage" src="https://f.i.uol.com.br/hunting/folha/1/common/logo-folha-facebook.jpg" alt="noticia3">
+                 </a>
+            </div>
+            <div class="headline">
+                <a href="https://www.gazetadopovo.com.br/" title="https://www.gazetadopovo.com.br/">
+                    <img class="headlineimage" src="https://static.poder360.com.br/2020/09/Gazeta-do-Povo-1086x630.jpg" alt="noticia4">
+                 </a>
+            </div>
+            <div class="headline">
+                <a href="https://g1.globo.com/" title="https://g1.globo.com/">
+                    <img class="headlineimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/G1_logo.svg/1280px-G1_logo.svg.png" alt="noticia5">
+                 </a>
+            </div>
+        </div>
+        <div id="container">
+            <article class="content">
+                <h1>Fake News</h1>
+                <h4>O que é o efeito sensacionalista?</h4>
+                <p>O ditado popular “quem conta um conto aumenta um ponto” mostra como diferentes
+                    versões de um fato podem gerar diversas opiniões. Muitas vezes, algo baseado em fatos
+                    reais sofre com o efeito sensacionalista, que é uma estratégia utilizada para chamar a
+                    atenção dos leitores.</p>
+                    <p>O sensacionalismo se dá quando se pega um ponto chave da notícia e o enaltece
+                    distorcendo os fatos, criando fake news. Assim, devemos sempre lembrar que palavras
+                    carregam valor e podem induzir opiniões</p>
+                <h4>Como se proteger das fake news?</h4>
+                <p>Antes de decidir confiar em alguma informação deve-se:</p>
+                <ul>
+                    <li>Diferenciar fatos e opiniões;</li>
+                    <p>As redes sociais dão um poder ao público de opinar sobre as informações,
+                        um “textão” de influenciadores não necessariamente é um fato.</p>
+                    <li>Ter clareza dos fatos antes de adotar uma opinião;</li>
+                    <p>Lembre-se que distorção da verdade também é mentira.</p>
+                    <li> Conferir em outras fontes confiáveis;</li>
+                    <p>Hoje em dia é fácil forjar notícias - modificar um texto ou uma citação e até
+                        mesmo uma foto;</p>
+                </ul>
+                <h4>3 Perguntas básicas contra as Fake News:</h4>
+                <p>Perguntas básicas para lhe ajudar a refletir sobre as informações dadas, antes de
+                    você compartilhar e emitir sua opinião.</p>
+                <ol>
+                    <li>Do que você está falando?</li>
+                    <p>Definição dos termos e contextos;</p>
+                    <li>O que você quer dizer?</li>
+                    <p>Descubra qual é a opinião da outra pessoa sobre, e qual é o propósito disto;</p>
+                    <li>Como você sabe que isso é verdade?</li>
+                    <p>Confira as suas fontes e busque evidências;</p>
+                </ol>
+                <h3>Conclusão</h3>
+                <p>Após estar ciente de toda essa problemática que chamamos de fakenews, veja ao lado esquerdo do nosso site algumas fontes de notícias que recomendamos.</p>
+            </article> 
+        </div>
+    </div>
+</body>
+<footer>
+<span id="copy">&copy; 2021 - Atividade Integradora I</span>
+</footer>
+<script>
+    function atualizaRelogio(){ 
+        var momentoAtual = new Date();
+        
+        var vhora = momentoAtual.getHours();
+        var vminuto = momentoAtual.getMinutes();
+        var vsegundo = momentoAtual.getSeconds();
+        
+        var vdia = momentoAtual.getDate();
+        var vmes = momentoAtual.getMonth() + 1;
+        var vano = momentoAtual.getFullYear();
+        
+        if (vdia < 10){ vdia = "0" + vdia;}
+        if (vmes < 10){ vmes = "0" + vmes;}
+        if (vhora < 10){ vhora = "0" + vhora;}
+        if (vminuto < 10){ vminuto = "0" + vminuto;}
+        if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+
+        dataFormat = vdia + " / " + vmes + " / " + vano;
+        horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+
+        document.getElementById("data").innerHTML = dataFormat;
+        document.getElementById("hora").innerHTML = horaFormat;
+
+        setTimeout("atualizaRelogio()",1000);
+    }
+</script>	
+</html>

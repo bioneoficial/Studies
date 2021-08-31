@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joao Luiz Bione</title>
+    <style> 
+    .linear1{
+        background: linear-gradient(to bottom right, white, green);
+        height: 100px;
+    }
+
+    .linear2{
+        background: linear-gradient(to bottom, white,red);
+        height: 100px;
+    }
+
+        .anima {
+          width: 100px;
+          height: 100px;
+          position: relative;
+          background-color: red;
+          animation-name: example;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+        @keyframes example {
+            0% {animation-duration: 2s;left:0px;top:0px; background-color: red;}
+           25% {background-color: blue;top:200px; }
+           50% {background-color: green; left: 200pxx; top: 200px;}
+           75% {background-color: yellow; left: 200px; top: 0px;}
+           100%{background-color: red;left: 0px;top:0px;}
+        }
+        </style>
+        
+</head>
+<body>
+    <div class="anima">div animação</div>
+    <div class="linear1">div linear1</div>
+    <div class="linear2">div linear2</div>
+</body>
+</html>

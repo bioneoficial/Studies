@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./assets/imgs/background.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+
+  <div class="keys">
+    <div data-key="a" class="key">
+      <kbd>A</kbd>
+      <span class="sound">Clap</span>
+    </div>
+    <div data-key="s" class="key">
+      <kbd>S</kbd>
+      <span class="sound">Hihat</span>
+    </div>
+    <div data-key="d" class="key">
+      <kbd>D</kbd>
+      <span class="sound">Kick</span>
+    </div>
+    <div data-key="f" class="key">
+      <kbd>F</kbd>
+      <span class="sound">Openhat</span>
+    </div>
+    <div data-key="u" class="key">
+      <kbd>U</kbd>
+      <span class="sound">Boom</span>
+    </div>
+    <div data-key="i" class="key">
+      <kbd>I</kbd>
+      <span class="sound">Ride</span>
+    </div>
+    <div data-key="o" class="key">
+      <kbd>O</kbd>
+      <span class="sound">Snare</span>
+    </div>
+    <div data-key="p" class="key">
+      <kbd>P</kbd>
+      <span class="sound">Tom</span>
+    </div>
+    <div data-key="h" class="key">
+      <kbd>H</kbd>
+      <span class="sound">Tink</span>
+    </div>
+  </div>
+  <div class="container">
+    <input type="text" class="" id="combo" placeholder="Type a combo here"><button id="comboBtn">Play!</button>
+  </div>
+  <div class="container">
+    <footer>
+      <div>
+        <p>&copy; João Bione.</p>
+      </div>
+    </footer>
+  </div>
+
+  <audio data-key="a" src="./assets/sounds/clap.wav"></audio>
+  <audio data-key="s" src="./assets/sounds/hihat.wav"></audio>
+  <audio data-key="d" src="./assets/sounds/kick.wav"></audio>
+  <audio data-key="f" src="./assets/sounds/openhat.wav"></audio>
+  <audio data-key="u" src="./assets/sounds/boom.wav"></audio>
+  <audio data-key="i" src="./assets/sounds/ride.wav"></audio>
+  <audio data-key="o" src="./assets/sounds/snare.wav"></audio>
+  <audio data-key="p" src="./assets/sounds/tom.wav"></audio>
+  <audio data-key="h" src="./assets/sounds/tink.wav"></audio>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

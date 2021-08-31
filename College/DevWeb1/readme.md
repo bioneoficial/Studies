@@ -1,0 +1,1 @@
+Quando decidi postar coisas da faculdade no Github não consegui recuperar todos exercícios já feitos, então vou postar os que encontrei.

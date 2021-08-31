@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joao Bione</title>
+    <style>
+      fieldset {
+        border: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ol type="I" start="5">
+        <li>Ex1</li>
+        <li>Ex2</li>
+        <li>Ex3</li>
+      </ol>
+      <hr width="70%" color="yellow" style="height: 7px" />
+      <ul style="list-style-type: square">
+        <li>Ex1</li>
+        <li>Ex2</li>
+        <li>Ex3</li>
+      </ul>
+      
+    </header>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <main>
+      <div  style="background-color: rgb(247, 171, 8);margin-left: 15px;width: 30%;">SISTEMA DE GESTAO ACADEMICA </div>
+      <form action="devWeb.php" method="POST" autocomplete="on" style="font-weight: bold;">
+        <fieldset>
+          
+          <legend>MANUTENCAO DE USUARIOS DO SISTEMA INTERNO</legend> <br />
+          <br />
+          <p> 
+            <label for="login" style="margin-right: 100px;"> Login </label>
+           <input id="login" name="login" type="text" required maxlength="22"minlength="4">
+          </p>
+          <p>
+            <label for="senha"  style="margin-right: 100px;">Senha</label> <input type="text" id="senha" name="senha">
+          </p>
+          <p> 
+            <label for="status" style="margin-right: 100px;">Status</label>
+            <select name="status" id="status">
+              <option value="ativo">Ativo</option>
+              <option value="inativo" selected>Inativo</option>
+            </select>
+          </p>
+          <p> 
+            <label for="tipo"  style="margin-right: 100px;">Tipo</label>
+          <input type="radio" name="tipo" id="tecnico">Técnico
+        <input type="radio" name="tipo" id="professor">Professor
+      <input type="radio" name="tipo" id="aluno">Aluno
+    </p>
+        <p>
+          <label for="criacao"  style="margin-right: 30px;">Data de Criacao</label>
+          <input type="date" name="criacao" id="criacao">
+        </p>
+        <p>
+          <label for="perfil"  style="margin-right: 100px;">Perfil</label>
+          <input type="radio" name="convidado" id="convidado">Convidado
+          <input type="radio" name="administrador" id="administrador">Administrador
+        </p>
+        <p>
+          <label for="observacoes"  style="margin-right: 50px;">Observacões</label>
+          <textarea name="observacoes" id="observacoes" cols="30" rows="5"></textarea>
+        </p>
+        <p>
+          <label for="modulos"  style="margin-right: 70px;">Módulos</label>
+          <input type="checkbox">Compras
+          <input type="checkbox">Biblioteca
+          <input type="checkbox">Academicos <br> <br>
+         <input style="margin-left: 140px;" type="checkbox">Documentacao
+          <input type="checkbox">Recursos Humanos 
+        </p>
+        <input type="submit" value="Cadastrar">
+        <input type="button" value="Excluir">
+
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

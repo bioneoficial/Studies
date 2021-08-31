@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .item-a {
+  grid-area: header;
+  background-color: aqua;
+  justify-content: center;
+    align-items: center;
+}
+.item-b {
+    /* sidebar */
+  grid-column-start: 1;
+    grid-column-end: 1;
+  grid-row-start:2 ;
+  grid-row-end:3 ;
+  background-color: orange;
+  justify-content: center;
+    align-items: center;
+  
+}
+.item-c {
+   grid-area: 2 / 2 / 4 / 5;
+  background-color: greenyellow;
+  justify-content: center;
+  align-items: center;
+}
+.item-d {
+  grid-area: footer;
+  background-color: purple;
+  grid-row-start: 4;
+  justify-content: center;
+    align-items: center;
+}
+.item-e{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:3 ;
+  grid-row-end:4 ;
+  justify-content: center;
+    align-items: center;
+    /* advert */
+}
+
+.item{
+    display: flex;
+    border: 3px solid white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 500px 1px 500px 500px;
+  grid-template-rows: 80px 80px 80px 80px;
+  grid-template-areas: 
+  "header header header header"
+  "main main . sidebar"
+    "footer footer footer footer";
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-a">header</div>
+        <div class="item item-b">sidebar</div>
+        <div class="item item-c">content</div>
+        <div class="item item-d">footer</div>
+        <div class="item item-e">advert</div>
+    </div>
+</body>
+</html>

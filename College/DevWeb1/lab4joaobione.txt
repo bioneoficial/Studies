@@ -1,0 +1,135 @@
+Joao Luiz Bione 1 SI Manhã
+REVISÃO
+
+Qual a função das tags abaixo:
+
+!DOCTYPE html = declarar ao navegador que é pagina HTML.
+html = Define o HTML.
+head = onde poe informações como meta/metadata/title etc.
+title = titulo que aparece na aba do navegador
+meta charset = conjunto de caracter, metadata.
+body = define o corpo do documento, oq o usuário ve.
+b = negrito
+i = italico
+u = sublinhado
+s = risca a palavra.
+center = centraliza oq tiver dentro da tag na pagina
+br = quebra de linha
+hr = linha horizontal
+size = altera tamanho
+color = altera cor
+face = atributo que usa na tag font pra definir a familia da fonte.
+width = altera largura
+height = altera altura
+h1..h6 = define os titulos de texto
+ol = lista ordenada
+li = define um item da lista
+type(quais são os seus subatributos) = button,checkbox,color,date,datetime-local,email,file,hidden,image,month,number,password,radio,range,reset,search,submit,tel,text,time,url,week, são tipos de type em um input. Mas existe o atributo Type para outras tags como por ex: <button> <embed> <link> etc.
+start= atributo usado em uma lista ordenada para definir o valor do primeiro item da lista.
+ul = lista nao ordenada
+align (quais são os seus subatributos) = sendo o align do HTML os subs são: left,center,right,justify,char.
+pre = define um texto preformatado que preserva espaços e quebradelinhas no código dentro da tag, inclusive a largura.
+marquee = texto em movimento definido pelo atributo direction, se n definir começa sempre da Direita para esq.
+direction (quais são os seus subatributos) = ltr,rtl,auto.
+behavior = um atributo da tag marquee que define seu comportamento.
+slide = o texto se movimenta na direção definida e para no final, nao saindo da tela.
+alternate = subatributo de behavior, alterna o movimento.
+scrollamount = define a velocidade do scroll.
+srcolldelay = define os pixels que ele se movimenta.
+!--      --  =Comentario"<!-- 'conteudo' -->"
+border = define borda.
+style = pode ser um atributo para estilizar inline numa tag html ou pode ser usado no css no proprio html ou no .css
+border-color = define cor da borda.
+table = tag de tabela
+cellspacing = define espaço entre as celulas da tabelas
+cellpadding = representa a distancia entre as bordas da celula e o conteudo contido nela.
+colspan = quantidade de colunas
+rowspan= quantide de linhas
+bgcolor= cor do background
+td= define coluna de uma tabela
+tr= define linha de uma tabela
+th=  define titulo usado em uma celula em uma tabela
+sub= poe o texto dentro da tag ficar pequeno e um pouco abaixo da linha em relação as outras palavras.
+sup= funciona o inverso da tag 'sub', usada por exemplo para definir em matematica "1²", o ''²'' é um exemplo de sup.
+background= define o background.
+img src= define uma imagem
+a href= define um link
+target= define aonde abrir o link.
+form= define um formulário
+fieldset= desenha um quadrado em volta dos elementos dentro da tag, mt usado dentro do form.
+legend= titulo de um fieldset
+method= usado para definir COMO enviar a data.
+action= usado para definir para aonde vai enviar a data.
+input= define um ''input'' nao sei a tradução disso, é onde o usuario vai entrar alguma informação.
+type= define o tipo de informação a ser  especificado no input
+placeholder= um texto que funciona como dica dentro de um input que ao clicar no local irá sumir.
+size= Largura dos chars em 1 tag input.
+maxlength= maximo de chars permitido em um input
+label for= define um rotulo para elemento.
+id= define um ID para a tag, ID único.
+name= define um nome para a tag.
+style= dnv? Pode ser um atributo para estilizar inline numa tag html ou pode ser usado no css no proprio html ou no .css
+font family= define a familia da fonte
+font size= define o tamanho da fonte
+background-color= define a cor de fundo
+background-image= define imagem de fundo
+background-repeat=  define a repetição do fundo, geralmente usado em uma imagem.
+background-size= define o tamanho do fundo, geralmente usado com imagem.
+background-attachment= define se a imagem de fundo vai scrollar junto com a pagina ou ser fixado.
+background-position= define a posição onde vc quer deixar a imagem de fundo.
+font-weight= define a grossura da fonte, se vai ser em negrito ou as letras terão uma linha mais fina, controla essa 'espessura' do texto.
+p= define um paragrafo.
+requerid=A Sra. quis dizer required? required especifica que aquele elemento precisa ser preenchido.
+
+
+2. Quais tipos (type) podemos ter dentro do input ? Explique a função de cada um deles.
+ button= define um botão usável
+checkbox= define diversas opções que podem ser selecionadas/marcadas.
+color=paleta de cores
+date=Define a escolha de uma data(ano,mes,dia)
+datetime-local= tudo que tem na data e com adicional de tempo/hora.
+email=Define um campo para email.
+file=define um campo para dar upload em um arquivo.
+hidden=define um input invisivel
+image= define uma imagem como botão de envio.
+month= campo para o Mês e ano.
+number=campo para preencher com número.
+password=campo para preencher a senha
+radio= define várioas opções como a checkbox mas apenas uma pode ser selecionada, ou seja, não pode selecionar 2+ opções ao mesmo tempo.
+range=Define um campo de controle para inserir um valor, o range ja vem com valor maximo e minimo ja definido e o usuario escolhe um valor dentro desta 'range' Ex: a barra de Volume do seu Celular ou Computador é um exemplo de RANGE.
+reset=Botão de reset.
+search= Campo para procura.
+submit=Botão de enviar.
+tel= campo para preencher com telefone.
+text= campo para preencher com characteres, geralmente um texto.
+time= Campo para selecionar a hora.
+url=Campo para preencher com um link.
+week= campo para preencher com a semana do ano, na seleção vc pode ver o ano dia e mes e o campo vai mostrar o numero da semana que vc selecionou em relação ao ano. Ex: Dia 1 de fevereiro de 2021 foi a 5 semana do ano.
+
+
+3. Qual a diferença de radio para checkbox ? 
+Radio só pode selecionar uma opção, checkbox pode selecionar todas.
+
+
+4. Qual a função do id ? 
+definir um ID único para tag, usado para estilizar especificamente o elemento com aquele ID no css ou para identificar uma relação no banco de dados ou em outra linguagem dependendo do navegador/programa.
+
+
+5. O que significa HTML? 
+HyperText Markup Language
+
+
+6. O que significa CSS? 
+Cascading Style Sheets
+
+
+7. Qual a diferença entre os  seletores: tag, id e class
+tag= Tag é um comando, um elemento com uma função EX: <p> <hr> <br> <form>, etc.
+id= define um ID único para um elemento, mais nenhum outro elemento pode ter aquela ID.
+class= define uma classe para o elemento, vários elementos podem ter a mesma classe facilitando  a estilização com css.
+
+
+8.Posso trabalhar de 3 maneiras diferentes no CSS, quais são elas?
+ 1-Inline(dentro da tag usando o style).
+2-dentro da pagina do html usando a tag Style, geralmente usamos dentro do <head> por questão de organização.
+3- linkando a pagina html a uma página .css(modo externo).

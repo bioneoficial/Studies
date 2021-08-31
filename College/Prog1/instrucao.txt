@@ -1,0 +1,327 @@
+João Bione
+
+Mapa 0
+
+para (i = 0 até 4) {
+    andar("frente");
+}
+
+Mapa 1
+
+para (i = 0 até 2) {
+    girar("direita");
+}
+para (i= 0 até 2) {
+    andar("frente");
+}
+
+
+Mapa 2
+
+para(i = 0 até 4) {
+    andar("frente");
+}
+girar("esquerda");
+para(i = 0 até 3) {
+    andar("frente");
+}
+girar("esquerda");
+para(i = 0 até 3) {
+andar("frente");
+}
+
+Mapa 3
+
+para(i = 0 até 10) {
+    andar("frente");
+}
+
+Mapa 4
+
+para(i = 0 até 6) {
+    se(frente == "pedra") {
+        girar("direita");
+}
+senao {
+    andar("frente");
+}
+}
+girar("esquerda");
+para(i = 0 até 3) {
+    andar("frente");
+}
+girar("esquerda");
+para(i = 0 até 4) {
+    andar("frente");
+}
+
+Mapa 5
+
+para(i = 0 até 37) {
+    se(frente != "borda") {
+      andar("frente");
+} 
+   senao{
+     girar("esquerda");
+}
+}
+
+
+Mapa 6
+
+girar("esquerda");
+para(i = 0 até 40) {
+    se(frente != "borda") {
+      andar("frente");
+} 
+   senao{
+     girar("direita");
+}
+}
+
+
+Mapa 7
+
+para(i = 0 até 6) {
+    andar("frente");
+}
+girar("esquerda");
+para(i = 0 até 6) {
+    andar("frente");
+}
+girar("esquerda");
+para(i = 0 até 6) {
+    andar("frente");
+}
+
+
+Mapa 8
+
+para (i = 0 até 20) {
+    se(frente =="pedra") {
+        girar("direita");
+    }
+    senao {
+      andar("frente");
+}
+}  
+
+Mapa 9
+
+para(i = 0 até 19) {
+    se(frente == "borda") {
+        girar("esquerda");
+    }
+    senao {
+        andar("frente");
+    }
+}
+para(i = 0 até 20) {
+    se(frente == "pedra") {
+        girar("esquerda");
+    }
+    senao {
+        andar("frente");
+    }
+}
+para(i = 0 até 6) {
+    se(frente == "borda") {
+        girar("direita");
+    }
+    senao {
+        andar("frente");
+    }
+    se(frente == "pedra") {
+        girar("direita");
+    }
+    senao {
+        andar("frente");
+    }
+    se(frente == "pedra") {
+        girar("esquerda");
+    }
+}
+
+Mapa 10
+
+para(i = 0 até 7) {
+    andar("frente");   
+ }
+ girar("esquerda");
+ para(i = 0 até 10) {
+     andar("frente");
+ }
+ girar("esquerda");
+ para(i = 0 até 9) {
+    se(frente == "pedra") {
+         girar("esquerda");
+     }
+     senao{
+          andar("frente");
+     }
+ }
+ girar("direita");
+ para (i = 0 até 7) {
+     se(frente =="pedra") {
+         girar("esquerda");
+         }
+       senao{
+         andar("frente");
+ }
+ }
+
+ Mapa 11
+
+ para(i = 0 até 7) {
+    se(frente == "pedra") {
+        girar("esquerda");
+    }
+    senao {
+        andar("frente");
+    }
+}
+
+para(i = 0 até 15) {
+    se(frente == "pedra") {
+        girar("direita");
+    }
+    senao {
+        andar("frente");
+    }
+}
+
+Mapa 12
+
+para(i = 0 até 10) {
+    se(frente == "pedra") {
+        girar("direita");
+    }
+    senao {
+        andar("frente");
+    }
+}
+para (i = 0 até 17) {
+    se(frente == "pedra") {
+        girar("esquerda");
+        }
+    senao {
+        andar("frente");
+        }
+}
+
+
+Mapa 13
+
+para(i = 0 até 21) {
+    se(frente == "borda") {
+        girar("esquerda");
+    }
+    senao {
+        andar("frente");
+    }
+}
+
+
+Mapa 14
+
+para(i = 0 até 14) {
+    se(frente == "pedra") {
+        girar("esquerda");
+    }
+    senao {
+        andar("frente");
+    }
+    se(frente != "pedra") {
+        andar("frente");
+    }
+    senao {
+        girar("direita");
+    }
+}
+para(i= 0 até 3) {
+    andar("atras");
+    }
+
+
+    Mapa 15
+
+    para(i = 0 até 12) {
+        se(frente == "pedra") {
+            girar("esquerda");
+        }
+        senao {
+            andar("frente");
+        }
+    }
+    para(i = 0 até 4) {
+        se(frente == "pedra") {
+            girar("direita");
+        }
+        senao {
+            andar("frente");
+        }
+    }
+    para(i = 0 até 12) {
+        se(frente == "pedra") {
+            girar("esquerda");
+        }
+        se(frente == "borda") {
+            girar("esquerda");
+        }
+    
+        senao {
+            andar("frente");
+        }
+    }
+
+    Mapa 16
+
+    para(i = 0 até 16) {
+        se(frente == "pedra") {
+            girar("esquerda");
+        }
+        senao {
+            andar("frente");
+        }
+        se(frente != "pedra") {
+            andar("frente");
+        }
+        senao {
+            girar("direita");
+        }
+    }
+
+    Mapa 17
+
+    para(i = 0 até 61) {
+        se(frente != "pedra") {
+            andar("frente");
+        }
+        senao {
+            girar("direita");
+        para(j = 0 até 2) {
+            se(frente == "pedra") {
+                girar("esquerda");
+                }
+    }
+    }
+      }
+
+      Mapa 18
+
+        para(i = 0 até 2) {
+ para(i = 0 até 33) {
+        se(frente != "pedra") {
+            andar("frente");
+        }
+        senao {
+            para(i = 0 até 2) {
+                girar("esquerda");
+            }
+        }
+        se(frente == "pedra") {
+            girar("direita");
+        }
+    }
+girar("esquerda");
+}

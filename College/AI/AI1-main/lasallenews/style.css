@@ -1,0 +1,138 @@
+html body{
+    margin: 0 !important;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3efef6c;
+}
+#wrap{
+    width: 1280px;
+    margin: 0 auto;
+}
+#start{
+    height: 30px;
+    background-color: black;
+}
+.script{
+    float: right;
+    padding: 6px;
+    font-size: 14px;
+}
+#logo{
+    margin: 10px;
+}
+#search{
+    float: right;
+}
+#search{
+    margin: 39px 20px;
+}
+#sInput{
+    width: 300px;
+    height: 30px;
+    outline: none;
+    padding-left: 5px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+#sInput:focus{
+    box-shadow: 1px 0.5px 0.5px rgba(94,98,105,0.298);
+}
+#navbar{
+    background-color: black;
+    overflow: hidden;
+    margin: 10px 0 30px 0;
+}
+#navbar a{
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 14px;
+}
+#navbar a:hover{
+    background-color: rgba(94,98,105,0.298);
+    border-radius: 5px;
+}
+#sButton{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#login{
+    float: right;
+    padding: 14px;
+    
+}
+.loginbox{
+    outline: none;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-left: 5px;
+    width: 120px;
+}
+.logintext{
+    color: white;
+    padding-right: 10px;
+}
+#loginButton{
+    border-radius: 5px;
+    border-width: 1px;
+}
+#sidebar{
+    float: left;
+    width: 240px;
+    padding: 20px 20px 5px 20px;
+    box-shadow: 0 1px 4px 0 rgba(94,98,105,0.298);
+    background-color: white;
+    margin-bottom: 30px;
+}
+hr{
+    opacity: 50%;
+    margin-bottom: 18px;
+}
+.headline{
+    text-align: center;
+    padding: 0px 0 20px 0;
+}
+.headlineimage{
+    width: 200px;
+    height: 120px;
+    padding: 0 20px 0 20px;
+    border-radius: 200px;
+}
+.headline a{
+    text-decoration: none;
+    color: black;
+}
+.headline a:hover{
+    text-decoration: underline;
+}
+#container{
+    width: 970px;
+    float: right;
+}
+.content{
+    box-shadow: 0 1px 4px 0 rgba(94,98,105,0.298);
+    background-color: white;
+    padding: 20px 25px 25px 20px;
+    margin-bottom: 30px;
+
+}
+footer{
+    clear: both;
+    background-color: black;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+#copy{
+    color: white;
+    display: block;
+    height: 20px;
+    padding: 5px;
+}
+p{
+    margin-left: 10px;
+}
