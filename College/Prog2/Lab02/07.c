@@ -6,8 +6,8 @@ int main(){
   char str[100];
   printf("Digite string:\n");
   gets(str);
- // scanf("%[^\n]%*c", str);
- //fgets(str, 100, stdin);
+ // FIZ ESSA BASEADA EM DIGITOS(ALFABETO) E NA 7.1 BASEADO NO INPUT/OUTPUT DO PDF.
+
   int length = strlen(str);
  int cont = 0, ascii = 0;
 for(int i = 0; i < length; i++){

@@ -22,7 +22,7 @@ int main(){
        if( cont == 0 ){
          C[i] = push;
        }else{
-         i = - 1;
+         i -= 1;
          };      
       };
   return 0;
