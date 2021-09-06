@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <time.h>
-
+int compare (const void * a, const void * b)
+{
+  return ( *(int*)a - *(int*)b );
+}
 // Carregar uma matriz 10 X 10, de inteiros, ordenados e sem repetição, desenvolva um programa que verifique se um determinado
 //número dado existe na matriz, caso não exista emitir mensagem correspondente.
 int main(){
@@ -11,6 +14,7 @@ int main(){
        matriz[i][k] = rand() % 100;
      }
   }
+    qsort (matriz, 100, sizeof(int), compare);
      printf("Insert a positive integer(number):\n");
      int guess = 0;
      scanf("%d", &guess);
