@@ -7,7 +7,6 @@ void teste(int solicitacao, int numCliente);
 
 int main(){
 int numCliente, solicitacao;
-char op;
 for(int i =0; i < numVoo;i++){
   reserva[i] = lugar; //Index é o numdovoo e o valor é lugares disponiveis;
 } // numCliente = 9999 => BREAK;
