@@ -1,7 +1,0 @@
-{
-  "files.associations": {
-    "*.css": "css",
-    "stdio.h": "c",
-    "string.h": "c"
-  }
-}
