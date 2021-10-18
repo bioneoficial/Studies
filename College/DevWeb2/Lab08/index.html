@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body> Insira valores numericos para calculo: <br>
+    <span>valor 1 = <input type="number" id="value1"></span>
+    <span>valor 2 = <input type="number" id="value2"></span>
+    <h4>Selecione o operador clicando no desejado:</h4>
+    <div>
+        <button onclick="soma()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mult()">*</button>
+        <button onclick="divi()">/</button>
+        <input type="number" id="res" readonly>
+    </div>
+        <h4>Média das notas = <span id="q2"></span></h4>
+        <p>var1= <span id="var1"></span></p>
+        <p>var2= <span id="var2"></span></p>
+        <p>var3= <span id="var3"></span></p>
+
+    <script> //Q1
+        let res = document.getElementById("res"), q2 = document.getElementById("q2"),var1 = document.getElementById("var1"),
+        var2 = document.getElementById("var2"), var3 = document.getElementById("var3");
+        var1.innerText = 5, var2.innerText = 3;
+        var3.innerText = "Resultado da subtração é: " + (Number(var1.innerText) - Number(var2.innerText));
+        const soma = () => {
+            let value1 = Number(document.getElementById("value1").value), value2 = Number(document.getElementById("value2").value);
+            return res.value = value1 + value2
+        }
+        const sub = () => {
+            let value1 = Number(document.getElementById("value1").value), value2 = Number(document.getElementById("value2").value);
+            return res.value = value1 - value2
+        }
+        const mult = () => {
+            let value1 = Number(document.getElementById("value1").value), value2 = Number(document.getElementById("value2").value);
+            return res.value = value1 * value2
+        }
+        const divi = () => {
+            let value1 = Number(document.getElementById("value1").value), value2 = Number(document.getElementById("value2").value);
+            return res.value = value1 / value2
+        }
+        //Q2
+        let n1 = Number(prompt("Insira uma nota:")), n2 = Number(prompt("Insira outra nota:")), n3 = Number(prompt("Insira ultima nota:"));
+        q2.innerText = (n1+n2+n3)/3;
+        //Q3
+    </script>
+
+</body>
+
+</html>
+<!-- Ler dois valores calcular e imprimir na tela: 
+
+usando o DOM
+a) A soma destes valores;
+b) O produto deles;
+c) O quociente entre eles;
+d) A diferença entre eles.
+
+2.Elabore um programa em JS usando o DOM que calcule a média ponderada de 3 notas e exiba o resultado na tela.
+
+3.Desenvolva um programa em JS 
+
+usando o DOM  em que a variável 1 recebe o valor 5, a variável 2 recebe 3 e a variável 3 recebe o resultado da subtração de var 1 e var 2 e mostre na tela a frase " Resultado da subtração é: concatenado com o valor do resultado.-->
