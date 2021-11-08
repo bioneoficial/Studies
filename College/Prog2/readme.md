@@ -1,1 +1,0 @@
-15 lab 2,  deixar unico
