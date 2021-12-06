@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joao Bione</title>
+  <style> 
+    #tabela, th,td{
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+<!--   <label for="peso">Peso</label>
+  <input type="number" name="peso" id="peso" >
+  <label for="altura">Altura</label>
+  <input type="number" name="altura" id="altura" >
+  <button id="botao">Calcular</button> let peso = document.getElementById("peso");
+  let altura = document.getElementById("altura");
+  let btnSub = document.querySelector("#botao");
+  btnSub.addEventListener("click", calcular); function calcular(){
+    let alturaValue = Number(altura.value);
+    let pesoValue = Number(peso.value);
+    if(!alturaValue || !pesoValue)
+      return "error";
+      let oi = pesoValue / (alturaValue * alturaValue);
+
+    return oi;
+  } -->
+  <div id="container">
+    <h2>Q1</h2>
+    <button id="botao">Calcular</button>
+    <table id="tabela">
+      <tr>
+        <th>Nome:</th>
+        <th>Idade</th>
+        <th>Peso(KG)</th>
+        <th>Altura(M)</th>
+        <th>IMC</th>
+      </tr>
+      <tr><td>Maria</td>
+      <td>32</td>
+      <td id="peso1">63</td>
+      <td id="alt1">1.56</td>
+      <td id="imc1"></td>
+  </tr>
+      <tr>
+        <td>Joaquim</td>
+        <td>55</td>
+        <td id="peso2">93</td>
+        <td id="alt2">1.80</td>
+        <td id="imc2"></td>
+      </tr>
+      <tr>
+        <td>Fabricio</td>
+        <td>20</td>
+        <td id="peso3">80</td>
+        <td id="alt3">1.73</td>
+        <td id="imc3"></td>
+      </tr>
+      <tr>
+        <td>Ana Carolina</td>
+        <td>26</td>
+        <td id="peso4">60</td>
+        <td id="alt4">1.60</td>
+        <td id="imc4"></td>
+      </tr>
+    </table>
+    <h2>Q2</h2>
+    <label for="nAl">Insira Num Alunos</label>
+    <input type="number" name="nAl" id="nAl">
+    <button id="botao2">Enviar</button>
+    <table>
+      <tr>
+        <th>Mais alto</th>
+        <th>Mais Baixo</th>
+        <th>N Alto</th>
+        <th>N Baixo</th>
+      </tr>
+      <tr>
+        <td id="maisAlto">0</td>
+        <td id="maisBaixo">9999</td>
+        <td id="numAlto">0</td>
+        <td id="numBaixo">0</td>
+      </tr>
+    </table>
+    <h2>Q3</h2>
+    <label for="CustoFab"> Custo Fabrica</label>
+    <input type="number" name="CustoFab" id="CustoFab">
+    <button id="botao3">Calcular</button>
+    <label for="imposto">Custo Consumidor:</label>
+    <input type="number" name="custoC" id="custoC" readonly>
+
+    <h2>Q4</h2>
+    <label for="pesU"> Envie medida em pés</label>
+    <input type="number" name="pesU" id="pesU">
+    <button id="botao4">Calcular Conversão</button>
+    <table>
+      <tr>
+        <th>polegadas </th>
+        <th>jardas </th>
+        <th>milhas</th>
+      </tr>
+      <tr>
+        <td id="polRes"></td>
+        <td id="jardRes"></td>
+        <td id="milRes"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+<script>
+  let pesU = document.querySelector("#pesU");
+  let btnSub4 = document.querySelector("#botao4");
+  btnSub4.addEventListener("click", questao4);
+  let CustoFab = document.querySelector("#CustoFab");
+  let custoC = document.querySelector("#custoC");
+  let btnSub3 = document.querySelector("#botao3");
+  btnSub3.addEventListener("click", questao3);
+  let alto = document.querySelector("#maisAlto");
+  let baixo = document.querySelector("#maisBaixo");
+  let nAl = document.querySelector("#nAl");
+  let btnSub2 = document.querySelector("#botao2");
+  btnSub2.addEventListener("click", enviarAl);
+  let container = document.querySelector("#container");
+  let tabela = document.querySelector("#tabela");
+  let peso1 = document.querySelector("#peso1");
+  let peso2 = document.querySelector("#peso2");
+  let peso4 = document.querySelector("#peso4");
+  let peso3 = document.querySelector("#peso3");
+  let alt1 = document.querySelector("#alt1");
+  let alt2 = document.querySelector("#alt2");
+  let alt3 = document.querySelector("#alt3");
+  let alt4 = document.querySelector("#alt4");
+  let imc1 = document.querySelector("#imc1");
+  let imc2 = document.querySelector("#imc2");
+  let imc3 = document.querySelector("#imc3");
+  let imc4 = document.querySelector("#imc4");
+  let btnSub = document.querySelector("#botao");
+  btnSub.addEventListener("click", calcular);
+
+  function questao4(){
+  let pes =  Number(pesU.value);
+  let polRes = document.querySelector("#polRes");
+  let jardRes = document.querySelector("#jardRes");
+  let milRes = document.querySelector("#milRes");
+  polRes.innerText = (pes * 12).toFixed(2);
+  jardRes.innerText = (pes / 3).toFixed(2);
+  milRes.innerText = ((pes / 3) / 1760);
+  
+  return;
+  }
+
+  function questao3(){
+    let CustoFabV = Number(CustoFab.value);
+  let perDisc = CustoFabV * 0.12;
+  let imposto = CustoFabV * 0.45;
+    
+  return  custoC.value = CustoFabV + perDisc + imposto;
+  }
+
+  function enviarAl(){
+    let altArr = []
+    for(let i = 0; i < nAl.value; i++){
+      let q2 = Number(prompt("Envia altura do " + (i+1) + "aluno:"));
+     altArr.push(q2)
+        alto.innerText = q2;
+        baixo.innerText = q2;
+    }
+    let i = 1;
+    for(let el of altArr){
+      if(Number(alto.innerText) < el){
+        alto.innerText = el;
+      }
+      if(Number(baixo.innerText) > el){
+        baixo.innerText = el;
+        numBaixo.innerText = i;
+      }
+      i++;
+    }
+    numAlto.innerText = altArr.indexOf(Number(alto.innerText)) + 1;
+    return 0;
+  }
+
+
+  function calcular(){
+    let calc1 =  Number(peso1.innerText)  / ( Number(alt1.innerText) * Number(alt1.innerText))
+    imc1.innerText = calc1.toFixed(2)
+    let calc2 =  Number(peso2.innerText)  / ( Number(alt2.innerText) * Number(alt2.innerText))
+    imc2.innerText = calc2.toFixed(2)
+    let calc3 =  Number(peso3.innerText)  / ( Number(alt3.innerText) * Number(alt3.innerText))
+    imc3.innerText = calc3.toFixed(2)
+    let calc4 =  Number(peso4.innerText)  / ( Number(alt4.innerText) * Number(alt4.innerText))
+    imc4.innerText = calc4.toFixed(2)
+  }
+</script>
+</html>

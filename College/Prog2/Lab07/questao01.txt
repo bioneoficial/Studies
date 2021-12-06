@@ -1,0 +1,13 @@
+Nome Peca: Fulano
+ Código Peca: 0
+ Preco Peca: R$1.10
+ Qtd Peca: 1
+ Codigo Fornecedor: 10
+
+Nome Peca: Fulano2
+ Código Peca: 2
+ Preco Peca: R$1.20
+ Qtd Peca: 2
+ Codigo Fornecedor: 20
+
+Valor total em estoque: R$2.30

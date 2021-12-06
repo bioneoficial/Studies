@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joao Bione</title>
+  <style>
+    table, th, td {
+  border: 1px solid black;
+}
+th,td{
+    text-align: center;
+  }
+table{
+      border-collapse: collapse;
+    }
+    td {
+  height: 5px;
+  vertical-align: bottom;
+}
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th id="cand1Name">cand1</th>
+      <th id="cand2Name">cand2</th>
+      <th id="cand3Name">cand3</th>
+    </tr>
+    <tr>
+      <td id="vote1">voto1</td>
+      <td id="vote2">voto2</td>
+      <td id="vote3">voto3</td>
+    </tr>
+  </table>
+</body>
+<script>
+  let cand1Name = document.getElementById("cand1Name");
+let cand2Name = document.getElementById("cand2Name");
+let cand3Name = document.getElementById("cand3Name");
+let vote1 = document.getElementById("vote1");
+let vote2 = document.getElementById("vote2");
+let vote3 = document.getElementById("vote3");
+let vCandArray = [];
+for(let i = 1; i <= 3; i++){ 
+  let nameCand = prompt("Insira nome do " + i + " candidato:");
+  if(i == 1)
+    cand1Name.innerText = nameCand;
+  else if( i == 2)
+    cand2Name.innerText = nameCand;
+  else
+    cand3Name.innerText = nameCand; 
+let vCand = Number(prompt("Insira o número de votos que " + nameCand + " recebeu:"));
+  vCandArray.push(vCand)
+}
+ totalVotes = vCandArray.reduce((a,b) => a+b);
+ vote2.innerText = ((vCandArray[1] * 100) / totalVotes).toFixed(2) + " %";
+ vote3.innerText =  ((vCandArray[2] * 100) / totalVotes).toFixed(2) + " %"; 
+ vote1.innerText = ((vCandArray[0] * 100) / totalVotes).toFixed(2) + " %";
+
+ window.alert("FIM");
+</script>
+</html>
