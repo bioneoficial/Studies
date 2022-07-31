@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct node{
+  int data;
+   struct node* next;
+}node;
+node* head;
+void insert(int data, int n);
+void print();
+void deleteL(int n);
+int main(void) {
+  head = NULL; // empty list
+  insert(2,0); // 2
+  insert(3,1); // 2 3
+  insert(4,0); // 4 2 3
+  insert(5,1); // 4 5 2 3
+  insert(6,4); // 4 5 2 3 6
+  //deleteL(0);
+    print();
+  return 0;
+}
+void insert(int data, int n){
+  node * temp = (node *)malloc(sizeof( node));
+  temp->data = data;
+  temp->next = NULL;
+  if(n==0){
+    temp->next = head;
+    head = temp;
+    return;
+  }    
+  node* temp1 = head;
+  for(int i=0;i<n-1;i++){
+    temp1 = temp1-> next;
+  }
+  temp->next = temp1->next;
+  temp1->next=temp;
+}
+void print(){
+  node* temp = head;
+  printf("List is: ");
+  while(temp != NULL){
+  printf(" %d",temp->data);
+    temp = temp->next;
+  }
+  printf("\n");
+}
+void deleteL(int n){
+  node* temp1 = head;
+  if(n == 0){
+    head = temp1->next;
+    free(temp1);
+    return ;
+  }
+  for(int i = 0;i < n; i++)
+      temp1 = temp1->next;
+  node* temp2 = temp1->next;
+  temp1->next = temp2->next;
+  free(temp2);
+}
