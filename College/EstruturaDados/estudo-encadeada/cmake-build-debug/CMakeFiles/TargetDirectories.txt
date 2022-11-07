@@ -1,0 +1,3 @@
+/Users/joaoph/CLionProjects/estudo-encadeada/cmake-build-debug/CMakeFiles/estudo_encadeada.dir
+/Users/joaoph/CLionProjects/estudo-encadeada/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/joaoph/CLionProjects/estudo-encadeada/cmake-build-debug/CMakeFiles/rebuild_cache.dir

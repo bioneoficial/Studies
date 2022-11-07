@@ -1,0 +1,142 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: EstudoEncadeado
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/joaoph/CLionProjects/EstudoEncadeado/cmake-build-debug/
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target EstudoEncadeado
+
+
+#############################################
+# Order-only phony target for EstudoEncadeado
+
+build cmake_object_order_depends_target_EstudoEncadeado: phony || CMakeFiles/EstudoEncadeado.dir
+
+build CMakeFiles/EstudoEncadeado.dir/main.c.o: C_COMPILER__EstudoEncadeado_Debug /Users/joaoph/CLionProjects/EstudoEncadeado/main.c || cmake_object_order_depends_target_EstudoEncadeado
+  DEP_FILE = CMakeFiles/EstudoEncadeado.dir/main.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/EstudoEncadeado.dir
+  OBJECT_FILE_DIR = CMakeFiles/EstudoEncadeado.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target EstudoEncadeado
+
+
+#############################################
+# Link the static library libEstudoEncadeado.a
+
+build libEstudoEncadeado.a: C_STATIC_LIBRARY_LINKER__EstudoEncadeado_Debug CMakeFiles/EstudoEncadeado.dir/main.c.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/EstudoEncadeado.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libEstudoEncadeado.a
+  TARGET_PDB = EstudoEncadeado.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/joaoph/CLionProjects/EstudoEncadeado/cmake-build-debug && "/Users/joaoph/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/joaoph/CLionProjects/EstudoEncadeado/cmake-build-debug && "/Users/joaoph/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/joaoph/CLionProjects/EstudoEncadeado -B/Users/joaoph/CLionProjects/EstudoEncadeado/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+build EstudoEncadeado: phony libEstudoEncadeado.a
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/joaoph/CLionProjects/EstudoEncadeado/cmake-build-debug
+
+build all: phony libEstudoEncadeado.a
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/joaoph/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

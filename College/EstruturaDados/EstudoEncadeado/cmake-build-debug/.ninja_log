@@ -1,0 +1,6 @@
+# ninja log v5
+140	160	1663892565273468000	libEstudoEncadeado.a	fc1ba6e1553abbd9
+0	139	1663892565249510627	CMakeFiles/EstudoEncadeado.dir/library.c.o	5f3eae06eaa91874
+0	59	1663892630891949264	build.ninja	e3adcde75b6e4913
+0	27	1663892630930608174	CMakeFiles/EstudoEncadeado.dir/main.c.o	37e3e65ad5a242f2
+27	45	1663892630950446000	libEstudoEncadeado.a	163320b2a8abf1d9
