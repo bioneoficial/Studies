@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "es2017",
+      "module": "esnext",
+      "strict": true,
+      "resolveJsonModule": true,
+      "declaration": true,
+      "experimentalDecorators": true,
+      "lib": ["es2023", "dom"],
+      "esModuleInterop": true,
+      "sourceMap": true,
+      "outDir": "./",
+      "moduleResolution": "node"
+    },
+  }
+  

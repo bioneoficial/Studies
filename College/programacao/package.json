@@ -1,0 +1,19 @@
+{
+  "name": "bione-solo-mission",
+  "version": "1.0.0",
+  "description": "Parada total academica fessor, por mais interessante e legal que possa ser e que eu tenha somente 3 anos de mercado de trabalho de tecnologia initerruptos eu nao vejo a utilidade disso se nao academica e somente exclusivamente academica",
+  "main": "alessandrodoido.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bione": "rm -f alessandrodoido.js && tsc alessandrodoido.ts && node alessandrodoido.js"
+  },
+  "author": "Bione",
+  "license": "ISC",
+  "dependencies": {
+    "readline": "^1.3.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0"
+  }
+}
