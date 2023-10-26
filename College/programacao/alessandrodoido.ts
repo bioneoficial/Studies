@@ -1,5 +1,7 @@
 import * as readline from 'readline';
 
+let operationCount = 0;
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -37,21 +39,31 @@ async function evaluateTree(node: ExpressionNode, variables: Record<string, numb
     const leftValue = await evaluateTree(node.left!, variables);
     const rightValue = await evaluateTree(node.right!, variables);
 
+let result;
     switch (node.value) {
       case '+':
-        return leftValue + rightValue;
+        result = leftValue + rightValue;
+        break;
       case '-':
-        return leftValue - rightValue;
+        result = leftValue - rightValue;
+        break;
       case '*':
-        return leftValue * rightValue;
+        result = leftValue * rightValue;
+        break;
       case '/':
         if (rightValue === 0) {
           throw new Error('Divisão por zero');
         }
-        return leftValue / rightValue;
+        result = leftValue / rightValue;
+        break;
       default:
         throw new Error('Operador inválido');
     }
+
+    operationCount++;
+    console.log(`${operationCount}a Operação: ${leftValue} ${node.value} ${rightValue} = ${result}`);
+
+    return result;
   }
   throw new Error('Nó inválido');
 }
@@ -172,7 +184,7 @@ function buildExecutionTree(expression: string): ExpressionNode {
   return parse(tokens);
 }
 
-// const expression = 'A + (3 * B) - C'; // A:2  B:3 C:4 Output: 7
+// const expression = 'A + (3 * B) - C + C'; // A:2  B:3 C:4 Output: 7
 // const expression = 'A + (3 ### B) - C'; // Expressão Inválida: Token Inválido 
   // const expression = 'A + (3 * B - C'; // Expressão Inválida: Uso Indevido de Parêntesis
   // const expression = '(2 * 3) + ((4 * A) - 10)' // A:2 Output: 4
@@ -185,8 +197,7 @@ const variables: Record<string, number> = {};
     console.log('Resultado Final:', result);
     process.exit(0);
   } catch (error) {
-    console.error(error.message);
+    console.error('Expressao inválida');
     process.exit(1);
   }
 })();
-
