@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bione e Matheus Soares</title>
+    <link rel='stylesheet' type='text/css' href='index.css'>
+</head>
+<body>
+    <div id="programSelector" class="program-selector">
+        <select id="programCode" class="program-selector__code">
+            <option value="">Select the Program</option>
+            <option value="021">Program 021</option>
+            <option value="022">Program 022</option>
+            <option value="023">Program 023</option>
+            <option value="024">Program 024</option>
+            <option value="025">Program 025</option>
+        </select>
+        <button id="startButton" class="program-selector__start-btn">Start</button>
+    </div>
+    <div id="gameContainer" class="game" style="display: none;">
+        <div class="game__header">
+            <h1 class="game__title">Pense Bem</h1>
+            <div class="game__code">
+            </div>
+            <div class="game__attempt">
+   
+            </div>
+        </div>
+        <div class="game__buttons">
+<button id='btnA' class="game__button game__button--red">A</button>
+<button id='btnB' class="game__button game__button--yellow" >B</button>
+<button id='btnC' class="game__button game__button--blue">C</button>
+<button id='btnD' class="game__button game__button--green">D</button>
+        </div>
+        <div id="pointsDisplay" class="game__points">Points: 0</div>
+        <div id="restartButton" class="game__restart">
+            Restart Game
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
