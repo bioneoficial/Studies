@@ -9,7 +9,7 @@ body {
 
 .game {
     width: 25vw;
-    height: 65vh;
+    height: 70vh;
     background-color: #ffea94;
     display: flex;
     flex-direction: column;
