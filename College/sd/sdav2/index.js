@@ -43,6 +43,7 @@
       programSelector.style.display = 'none';
       gameContainer.style.display = 'flex';
       updateDisplay();
+      playSound('startLevel');
     } else {
       alert("Invalid Program Number!");
     }
@@ -55,6 +56,7 @@
       points += calculatePoints(attempt);
       number++;
       attempt = 1;
+      playSound('soundCorrect'); 
     } else {
       if (attempt >= 3) {
         number++;
@@ -62,6 +64,7 @@
       } else {
         attempt++;
       }
+      playSound('soundWrong') 
     }
     
     if (number > currentTemplate.length) {
@@ -121,7 +124,13 @@
   .catch(error => console.error('Error loading JSON:', error));
   
   function finishGame() {
+    playSound('endGame');
     alert(`End of Game! Your score was: ${points}`);
     initialize();
+  }
+
+  function playSound(soundId) {
+    const sound = document.getElementById(soundId);
+    sound.play();
   }
   

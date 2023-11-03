@@ -7,6 +7,11 @@
     <link rel='stylesheet' type='text/css' href='index.css'>
 </head>
 <body>
+    <audio id="soundCorrect" src="correct-beep.wav"></audio> 
+    <audio id="soundWrong" src="error-sound-fx.wav"></audio>
+    <audio id="startLevel" src="single-beep.wav"></audio>
+    <audio id="endGame" src="erro.mp3"></audio>
+
     <div id="programSelector" class="program-selector">
         <select id="programCode" class="program-selector__code">
         </select>
@@ -18,14 +23,13 @@
             <div class="game__code">
             </div>
             <div class="game__attempt">
-   
             </div>
         </div>
         <div class="game__buttons">
-<button id='btnA' class="game__button game__button--red">A</button>
-<button id='btnB' class="game__button game__button--yellow" >B</button>
-<button id='btnC' class="game__button game__button--blue">C</button>
-<button id='btnD' class="game__button game__button--green">D</button>
+            <button id='btnA' class="game__button game__button--red">A</button>
+            <button id='btnB' class="game__button game__button--yellow" >B</button>
+            <button id='btnC' class="game__button game__button--blue">C</button>
+            <button id='btnD' class="game__button game__button--green">D</button>
         </div>
         <div id="pointsDisplay" class="game__points">Points: 0</div>
         <div id="restartButton" class="game__restart">
