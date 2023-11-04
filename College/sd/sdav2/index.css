@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: whitesmoke;
 }
 
 .game {
@@ -104,6 +104,86 @@ body {
     color: red;
     font-size: 24px;
     padding: 10px;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 45%;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px; 
+    cursor: pointer;
+}
+
+.carousel-item legend {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+    z-index: 10;
+}
+
+.carousel-control-next {
+    right: 10px;
+    z-index: 10;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.carousel-control-prev[disabled],
+.carousel-control-next[disabled] {
+    display: none;
+}
+
+.carousel-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.carousel-container::-webkit-scrollbar-track {
+    background: #efefef;
 }
 
 @media (max-width: 480px) {
