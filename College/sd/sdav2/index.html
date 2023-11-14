@@ -24,10 +24,9 @@
             <span class="sr-only">Next</span>
             <span class="carousel-control-next-icon" aria-hidden="true">&gt;</span>
         </button>
-        <button id="backButton" class="program-selector__select-btn" style="display: none;">Back</button>
-        <select id="programCode" class="program-selector__code"style="display: none;">
-        </select>
-        <button id="startButton" class="program-selector__start-btn" style="display: none;">Start</button>
+        <ul id="programCode" class="program-selector__code"style="display: none;">
+        </ul>
+        <button id="backButton" class="program-selector__select-btn" style="display: none;">Outro livro</button>
     </div>
     <div id="gameContainer" class="game" style="display: none;">
         <div class="game__header">
@@ -43,10 +42,10 @@
             <button id='btnC' class="game__button game__button--blue">C</button>
             <button id='btnD' class="game__button game__button--green">D</button>
         </div>
-        <div id="pointsDisplay" class="game__points">Points: 0</div>
-        <div id="restartButton" class="game__restart">
+        <div id="pointsDisplay" class="game__points"></div>
+        <button id="restartButton" class="game__restart">
             Restart Game
-        </div>
+        </button>
     </div>
 </body>
 <script src="index.js"></script>

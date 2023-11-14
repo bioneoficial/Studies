@@ -13,7 +13,6 @@ let number,
   prevButton,
   nextButton,
   carousel,
-  startButton,
   responseButtons,
   restartButton,
   backButton;
@@ -36,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
   prevButton = document.querySelector(".carousel-control-prev");
   nextButton = document.querySelector(".carousel-control-next");
   carousel = document.querySelector(".carousel-container");
-  startButton = document.getElementById("startButton");
   responseButtons = document.querySelectorAll(".game__button");
   restartButton = document.querySelector(".game__restart");
   backButton = document.querySelector("#backButton");
@@ -45,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
     resetToInitialState();
   });
 
-  startButton.addEventListener("click", startGame);
   prevButton.addEventListener("click", () => {
     carousel.scrollBy({ left: -carousel.offsetWidth, behavior: "smooth" });
   });
@@ -141,15 +138,22 @@ function initialize() {
 }
 
 function populateProgramSelector(programs) {
-  programCodeInput.innerHTML = '<option value="">Select the Program</option>';
+  programCodeInput.innerHTML = '';
 
   programs.forEach(template => {
-    const option = document.createElement('option');
+    const option = document.createElement('li');
     option.value = template.code;
     option.textContent = `Program ${template.code}`;
+    option.addEventListener('click', function () {
+      selectedProgramCode = this.textContent.split(' ')[1]
+      programCodeInput.value = selectedProgramCode
+      startGame()
+    })
     programCodeInput.appendChild(option);
   });
 }
+
+
 
 function createCarouselItem(pattern) {
   const container = document.createElement("div");
@@ -161,7 +165,6 @@ function createCarouselItem(pattern) {
 
   image.addEventListener("click", function () {
     programCodeInput.style.display = "inline";
-    startButton.style.display = "inline";
     backButton.style.display = "inline";
 
     document.getElementById("carousel-container").style.display = "none";
@@ -252,5 +255,4 @@ function resetToInitialState() {
   document.querySelector(".carousel-control-next").style.display = "block";
   backButton.style.display = "none"; 
   programCodeInput.style.display = "none";
-  startButton.style.display = "none";
 }
