@@ -25,6 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .game__header {
@@ -197,15 +198,7 @@ body {
     background: #efefef;
 }
 
-@media (max-width: 480px) {
-    .game__title {
-        font-size: 20px;
-    }
-    .game__code {
-        font-size: 20px;
-        padding: 5px;
-    }
-}
+
 ul {
     list-style: none;
 }
@@ -233,4 +226,76 @@ li:hover {
 
 #backButton:hover {
     background-color: #e6c541;
+}
+
+@media (max-width: 1024px) {
+    html{
+        font-size: xx-large;
+    }
+
+    .game {
+        padding-top: 10px;
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .game__code {
+        font-size: 24px;
+        padding: 5px;
+    }
+    .game__attempt, .game__points, .game__restart, .game__title{
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 850px) {
+    html{
+        font-size: xx-large;
+    }
+    .program-selector{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .game {
+        width: 70vw;
+        height: 50vh;
+    }
+ 
+    .game__code {   
+        font-size: 44px;
+        padding: 5px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .program-selector{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-control-prev, .carousel-control-next{
+        width: 20%;
+        font-size: 12px;
+    }
+
+    .game {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .game__code {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .game__attempt, .game__points, .game__restart, .game__title{
+        font-size: 24px;
+    }
 }
